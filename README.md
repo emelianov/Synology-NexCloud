@@ -9,7 +9,7 @@ Setup NextCloud on Synology
 
 1. Create share to store NextCloud data. Make sure allow read/write to `http` group
 ![share-permission](https://github.com/emelianov/Synology-NextCloud/blob/master/images/share-perm.png)
-1. Login to Synology usin your favorit ssh client as *admin*
+1. Login to Synology using your favorite ssh client as *admin*
 
 2. Switch to root. (Use *admin* password again)
 ```
@@ -52,7 +52,7 @@ root@DSM6:/volume1/web# tar -xf nextcloud-12.0.2.tar.bz2
 root@DSM6:/volume1/web# chown -R http:http nextcloud
 ```
 
-8. Change ownship for NextCloud data directory
+8. Change ownership for NextCloud data directory
 ```
 root@DSM6:/volume1/web# chown root:http /volume1/nextcloud
 ```
@@ -76,7 +76,7 @@ That's all with CLI.
 * pdo_mysql
 * zip
 
-13. Reset Maria DB password to known. Also note port on whitch DB is listen for requests (3307 at screenshot).
+13. Reset Maria DB password to known. Also note port on which DB is listen for requests (3307 at screenshot).
 ![php-settings](https://github.com/emelianov/Synology-NextCloud/blob/master/images/db-port.png)
 
 14. Open `<synology_ip>/nextcloud` in browser. Fill
@@ -89,4 +89,4 @@ That's all with CLI.
 * Maria DB IP:PORT (from step 13.) It's better to specify IP (`127.0.0.1`) rather than name (`localhost`) as name may not work in same cases.
 ![nextcloud-start](https://github.com/emelianov/Synology-NextCloud/blob/master/images/nc-create.png)
 
-15. Click `Finish` and wait while NextClout to be initialized
+15. Click `Finish` and wait while NextCloud to be initialized
