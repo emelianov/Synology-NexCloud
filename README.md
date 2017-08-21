@@ -23,7 +23,7 @@ root@DSM6:~# cd /volume1/web/
 root@DSM6:/volume1/web#
 ```
 
-4. Go to [Install - NextCloud](https://nextcloud.com/install/#instructions-server) and Copy Link to `tar.bz2` archive. (https://download.nextcloud.com/server/releases/nextcloud-12.0.2.tar.bz2 now)
+4. Go to [Install - NextCloud](https://nextcloud.com/install/#instructions-server), click `Detail download and options` and Copy Link to `tar.bz2` archive. (https://download.nextcloud.com/server/releases/nextcloud-12.0.2.tar.bz2 now)
 
 5. Download NextCloud package to local
 ```
