@@ -88,3 +88,5 @@ That's all with CLI.
 * DB name
 * Maria DB IP:PORT (from step 13.) It's better to specify IP (`127.0.0.1`) rather than name (`localhost`) as name may not work in same cases.
 ![nextcloud-start](https://github.com/emelianov/Synology-NextCloud/blob/master/images/nc-create.png)
+
+15. Click `Finish` and wait while NextClout to be initialized
