@@ -1,13 +1,14 @@
-# Synology-NexCloud
+# Synology-NextCloud
 Setup NextCloud on Synology
 
-0. Synology packages needs to be installed:
+0. Synology DSM 6.2 with following packages are installed
 * Web Station
-* Apache 2.2
-* Maria DB
+* Apache Server 2.2
+* Maria DB 10
+* PHP 5.6
 
 1. Login to Synology usin your favorit ssh client as *admin*
-2. Switch to root. Use *admin* password again
+2. Switch to root. (Use *admin* password again)
 ```
 admin@DSM6:/$ sudo -i
 password:
@@ -42,4 +43,23 @@ root@DSM6:/volume1/web# tar -xf nextcloud-12.0.2.tar.bz2
 ```
 root@DSM6:/volume1/web# chown -R http:http nextcloud
 ```
+8. Change ownship for NextCloud data directory
+```
+root@DSM6:/volume1/web# chown root:http /volume1/nextcloud
+```
+9. Restrict everyone access to NextCloud data
+```
+root@DSM6:/volume1/web# chmod 770 /volume1/nextcloud
+```
 That's all with CLI.
+10. Set http back-server to Apache 2.2 and PHP to 5.6
+![back-server](https://github.com/emelianov/Synology-NextCloud/images/web-general.png)
+11. :/dev/urandom:/volume1/web/nextcloud/data
+12. Extensions
+* culr
+* gd
+* openssl
+*pdo_mysql
+* zip
+13. Maira DB port
+
