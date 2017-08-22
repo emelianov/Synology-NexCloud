@@ -63,7 +63,7 @@ root@DSM6:/volume1/web# chmod 770 /volume1/nextcloud
 ```
 That's all with CLI.
 
-10. Set http back-server to Apache 2.2 and PHP to 5.6
+10. Open `Web Station`. Go General settings tab. Set http back-server to Apache 2.2 and PHP to 5.6
 ![back-server](https://github.com/emelianov/Synology-NextCloud/blob/master/images/web-general.png)
 
 11. Add `:/dev/urandom:/volume1/nextcloud` to end of open_basedir
